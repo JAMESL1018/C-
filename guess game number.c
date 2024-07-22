@@ -11,7 +11,7 @@ menu() {
 
 game()
 {
-	//Éú³ÉËæ»úÊı1-100
+	//ç”Ÿæˆéšæœºæ•°1-100
 	int number = 0;
 	int count = 5;
 	int ret = rand()%100+1;
@@ -45,7 +45,7 @@ game()
 int main()
 {
 	int intput = 0;
-	srand((unsigned int)time(NULL));//Ëæ»úÖµµÄ³õÊ¼»¯
+	srand((unsigned int)time(NULL));//éšæœºå€¼çš„åˆå§‹åŒ–
 	do
 	{
 		menu();
