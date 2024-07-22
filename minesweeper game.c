@@ -24,7 +24,7 @@ void Initialization(char arr[ROWS][COLUMNS], int rows, int columns, char set)
 
 void Printmap(char arr[ROWS][COLUMNS], int row, int column)
 {
-	printf("É¨À×\n");
+	printf("æ‰«é›·\n");
 	int i = 1;
 	for (i = 0; i <=row; i++)
 	{
@@ -102,9 +102,9 @@ void Troubleshooting(char mine[ROWS][COLUMNS], char show[ROWS][COLUMNS], int row
 			}
 			else
 			{
-				//²»ÊÇÀ×£¬¾ÍÍ³¼ÆÖÜÎ§À×µÄ¸öÊý
+				//ä¸æ˜¯é›·ï¼Œå°±ç»Ÿè®¡å‘¨å›´é›·çš„ä¸ªæ•°
 				int n = Statistics(mine, x, y);
-				show[x][y] = n + '0';//·µ»ØµÄÊÇÕûÐÍ
+				show[x][y] = n + '0';//è¿”å›žçš„æ˜¯æ•´åž‹
 				Printmap(show, ROW, COLUMN);
 				cut++;
 			}
