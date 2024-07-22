@@ -13,15 +13,15 @@ void game()
 {
 	char mine[ROWS][COLUMNS];
 	char show[ROWS][COLUMNS];
-	//初始化地图
+	
 	Initialization(mine, ROWS,COLUMNS,'0');
 	Initialization(show, ROWS,COLUMNS,'*');
-	//打印地图
+	
 	Printmap(show, ROW, COLUMN);
 	/*Printmap(mine, ROW, COLUMN);*/
-	//布置雷
+	
 	Arrangement(mine, ROW, COLUMN);
-	//排查雷
+	
 	Troubleshooting(mine, show, ROW, COLUMN);
 
 
